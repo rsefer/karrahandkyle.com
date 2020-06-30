@@ -2,3 +2,4 @@ node_modules*
 .map*
 _site
 SOURCE
+.jekyll-cache
