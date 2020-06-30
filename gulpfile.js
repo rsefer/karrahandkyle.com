@@ -123,7 +123,7 @@ gulp.task('watch', function() {
   gulp.watch(paths.src + 'style/**/*', gulp.series('sass', 'jekyll-rebuild'));
   gulp.watch(paths.src + 'scripts/**/*', gulp.series('js', 'jekyll-rebuild'));
   gulp.watch(paths.src + 'images/**/*', gulp.series('images', 'jekyll-rebuild'));
-  gulp.watch(['index.html', '_includes/**/*.html', '**/*.yml'], gulp.series('jekyll-rebuild'));
+  gulp.watch(['*.html', '_includes/**/*.html', '**/*.yml'], gulp.series('jekyll-rebuild'));
 });
 gulp.task('build', gulp.series('assets', 'jekyll-build', 'browser-sync'));
 gulp.task('dev', gulp.parallel('build', 'watch'));
