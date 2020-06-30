@@ -34,7 +34,9 @@
   });
 });
 
-
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 400
+});
 
 var mapContainer = document.getElementById('map');
 if (mapContainer) {

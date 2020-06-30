@@ -20,7 +20,3 @@ linters:
     enabled: false
   SelectorFormat:
     enabled: false
-  Indentation:
-    enabled: false
-  ImportantRule:
-    enabled: false
