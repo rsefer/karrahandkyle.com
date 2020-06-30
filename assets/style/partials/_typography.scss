@@ -1,0 +1,86 @@
+nav {
+	font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+  margin: 0px 0px 1rem;
+  color: $color-headline;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $screen-sm) {
+    margin-bottom: 2rem;
+  }
+
+}
+
+p {
+
+  margin: 0px 0px 1rem;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  main & {
+
+    font-size: 1.25rem;
+    line-height: 1.4;
+
+    @media screen and (min-width: $screen-md) {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  a {
+    color: $green;
+  }
+
+}
+
+h1 {
+  font-size: 3rem;
+  @media screen and (min-width: $screen-sm) { font-size: 5rem; }
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  @media screen and (min-width: $screen-sm) { font-size: 3rem; }
+}
+
+h3 {
+  font-size: 1.5rem;
+  @media screen and (min-width: $screen-sm) { font-size: 2.5rem; }
+}
+
+h4 {
+  font-size: 1rem;
+  @media screen and (min-width: $screen-sm) { font-size: 1.5rem; }
+}
+
+.svg-dump {
+  display: none;
+}
+
+.icon {
+
+  display: inline-block;
+  vertical-align: middle;
+
+  &.left {
+    margin-right: 0.5em;
+  }
+
+  &.right {
+    margin-right: 0.5em;
+  }
+
+}

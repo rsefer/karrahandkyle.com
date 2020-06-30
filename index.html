@@ -1,0 +1,126 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="hero-back"></div>
+  <div class="content">
+    <h1>Karrah<br>&amp; Kyle</h1>
+    <h2>{{ site.wedding_date }}<span> &bull; </span>{{ site.wedding_location }}</h2>
+  </div>
+</section>
+
+<nav>
+  <ul>
+    <li><a href="#details">Details</a></li>
+    <li><a href="#wedding-party">Wedding Party</a></li>
+    <li><a href="#accommodations">Accommodations</a></li>
+    <li><a href="#registry">Registry</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section data-section="details">
+  <div class="wrapper">
+    <div class="block block-details">
+      <div class="block-content">
+        <h2>Ceremony</h2>
+        <address>
+          <p>
+            <strong>Susanaberg Ruins</strong>
+          </p>
+          <div></div>
+        </address>
+        <p><strong>{{ site.wedding_date }} @ X:XX pm</strong></p>
+      </div>
+      <div class="block-images">
+        <img data-src="{{ site.imagebase }}/oldstpats.jpg" alt="Old St. Pat's">
+      </div>
+    </div>
+    <div class="block block-details">
+      <div class="block-content">
+        <h2>Reception</h2>
+        <address>
+          <p>
+            <strong>Rhumb Lines</strong><br>
+						3 Estate Emmaus, Coral Bay<br>
+						St John 00830
+          </p>
+          <div></div>
+        </address>
+        <p><strong>Cocktail Hour @ X:XX pm<br>Reception @ X:XX pm</strong></p>
+      </div>
+      <div class="block-images">
+        <img data-src="{{ site.imagebase }}/salvageone.jpg" alt="Salvage One">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-section="wedding-party">
+  {% include wedding-party.html %}
+</section>
+
+<section data-section="accommodations">
+  <div class="wrapper">
+    <div class="block block-accommodations">
+      <div class="block-content">
+        <h2>Ace Hotel</h2>
+        <address>
+          <p>
+            311 North Morgan Street<br>
+            Chicago, IL 60607
+          </p>
+          <div></div>
+        </address>
+        <p><em>Overnight Parking: $57</em></p>
+        <p>Located in the Fulton Market neighborhood near the church and reception.</p>
+        <p>To book, <a href="https://www.acehotel.com/reservations/chicago?code_type=group_code&promo_code=ROAN">click this link</a> and use the code ROAN, email <a href="mailto:reservations.chi@acehotel.com?subject=ROAN+Wedding" target="_blank">reservations.chi@acehotel.com</a>, or call <a href="tel:+13125481177" target="_blank">(312) 548-1177</a>.</p>
+      </div>
+      <div class="block-images">
+        <img data-src="{{ site.imagebase }}/acehotel.jpg" alt="Ace Hotel">
+      </div>
+    </div>
+    <div class="block block-accommodations">
+      <div class="block-content">
+        <h2>Holiday Inn</h2>
+        <address>
+          <p>
+            350 West Mart Center Drive<br>
+            Chicago, IL 60654
+          </p>
+          <div></div>
+        </address>
+        <p><em>Overnight Parking: $41</em></p>
+        <p>Located in the River North neighborhood downtown.</p>
+        <p>To book, <a href="https://bit.ly/Comiskey_Roan">click this link</a> or call <a href="tel:+18552680372" target="_blank">(855) 268-0372</a> and use the group code CRB.</p>
+      </div>
+      <div class="block-images">
+        <img data-src="{{ site.imagebase }}/holidayinn.jpg" alt="Holiday Inn">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-section="map">
+  <div id="map" class="map"></div>
+</section>
+
+<section data-section="registry">
+  <div class="wrapper">
+    <h2>Registry</h2>
+  </div>
+  <div class="stores">
+    <a href="#" target="_blank"><img data-src="#" alt=""></a>
+  </div>
+</section>
+
+<section data-section="photos">
+  <img data-src="{{ site.imagebase }}/photos/dance.jpg" alt="">
+  <img class="portrait" data-src="{{ site.imagebase }}/photos/flail.jpg" alt="">
+  <img class="portrait" data-src="{{ site.imagebase }}/photos/carry.jpg" alt="">
+  <img data-src="{{ site.imagebase }}/photos/el.jpg" alt="">
+</section>
+
+</main>

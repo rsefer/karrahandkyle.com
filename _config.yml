@@ -1,0 +1,21 @@
+# Site settings
+title: 'Karrah &amp; Kyle'
+baseurl: ''
+distbase: './dist'
+imagebase: './dist/images'
+wedding_date: 'March 10, 2021'
+wedding_location: 'St. John, Virgin Islands'
+production_url: 'https://karrahandkyle.com'
+
+# Build settings
+permalink: pretty
+exclude: [
+  'node_modules',
+  'package.json',
+  'package-lock.json',
+  'gulpfile.js',
+  'README.md',
+  'SOURCE',
+  'assets/'
+]
+languages: ['en']

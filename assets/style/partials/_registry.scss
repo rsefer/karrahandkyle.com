@@ -1,0 +1,90 @@
+[data-section="registry"] {
+
+  .stores {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: flex-end;
+
+    a {
+
+      display: block;
+      margin: 1rem 0px 0px;
+      padding: 1rem 2rem;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      @media screen and (min-width: $screen-xs) {
+
+        padding: 0px;
+        margin: 2rem 1rem;
+
+        img {
+          width: 8rem;
+        }
+
+      }
+
+      @media screen and (min-width: 28rem) {
+
+        margin: 2rem 1.5rem;
+
+        img {
+          width: 10rem;
+        }
+
+      }
+
+      @media screen and (min-width: 38rem) {
+
+        img {
+          width: 14rem;
+        }
+
+      }
+
+      @media screen and (min-width: $screen-sm) {
+        margin: 2rem 4rem;
+      }
+
+      @media screen and (min-width: $screen-md) {
+
+        margin: 2rem;
+
+        img {
+          width: 11rem;
+        }
+
+      }
+
+      @media screen and (min-width: $screen-lg) {
+
+        img {
+          width: 14rem;
+        }
+
+      }
+
+      @media screen and (min-width: $screen-xl) {
+
+        margin: 2rem 3rem;
+
+        img {
+          width: 17rem;
+        }
+
+      }
+
+    }
+
+  }
+
+
+}

@@ -1,0 +1,58 @@
+html,
+body {
+  color: $color-text;
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+
+  margin: 0px 1rem;
+
+  @media screen and (min-width: $screen-sm) {
+    margin: 0px 2rem;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    margin: 0px auto;
+    width: $screen-md - 2rem;
+  }
+
+  // @media screen and (min-width: $screen-lg) {
+  //   width: $screen-lg - 2rem;
+  // }
+
+}
+
+main {
+
+  section {
+
+    padding: 3rem 0px;
+
+    &:after {
+      content: ' ';
+      display: block;
+      clear: both;
+    }
+
+  }
+
+}
+
+address {
+
+  font-style: normal;
+
+  strong {
+    color: $color-accent;
+  }
+
+}

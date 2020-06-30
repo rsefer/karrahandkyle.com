@@ -1,0 +1,39 @@
+[data-section="photos"] {
+
+  padding-bottom: 0px;
+
+  img {
+
+    display: block;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 3%;
+    }
+
+    @media screen and (min-width: $screen-xs) {
+
+      &:not(:last-child) {
+        margin-bottom: 1%;
+      }
+
+    }
+
+    @media screen and (min-width: $screen-md) {
+
+      &.portrait {
+
+        float: left;
+        width: 49.5%;
+
+        + .portrait {
+          margin-left: 1%;
+        }
+
+      }
+
+    }
+
+  }
+
+}

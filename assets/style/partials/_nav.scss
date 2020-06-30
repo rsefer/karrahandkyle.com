@@ -1,0 +1,63 @@
+nav {
+
+  margin: 1.5rem 2rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+
+  @media screen and (min-width: $screen-md) {
+    margin: 0px 2rem;
+    opacity: 0;
+    animation: {
+      name: fadeInUpNav;
+      delay: 1700ms;
+      duration: 250ms;
+      fill-mode: forwards;
+      timing-function: ease-out;
+    }
+  }
+
+  a {
+
+    display: block;
+    color: $color-text;
+    text-decoration: none;
+    transition: all 250ms;
+
+    &:hover {
+      transform: translate(0px, -1px);
+    }
+
+  }
+
+  ul {
+
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+
+    li {
+
+      &:not(:first-child) {
+        margin-top: 1.5rem;
+      }
+
+      @media screen and (min-width: $screen-md) {
+
+        &:not(:first-child) {
+          margin-top: 1.875rem;
+        }
+
+        display: inline-block;
+        vertical-align: middle;
+        margin: 1.875rem 1rem;
+
+      }
+
+    }
+
+  }
+
+}

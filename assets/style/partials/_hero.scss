@@ -1,0 +1,114 @@
+.hero {
+
+  position: relative;
+  height: 570px;
+  color: $white;
+
+  @media screen and (min-width: $screen-sm) {
+    height: calc(100vh - 5rem);
+  }
+
+  @media screen and (min-width: $screen-sm) and (min-height: 500px) {
+    min-height: 650px;
+  }
+
+  &-back {
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: {
+      size: cover;
+      position: 60% center;
+      image: url('./dist/images/photos/bridge.jpg');
+    }
+    opacity: 0;
+    animation: {
+      name: fadeIn;
+      duration: 400ms;
+      fill-mode: forwards;
+      timing-function: linear;
+    }
+
+    @media screen and (min-width: $screen-sm) {
+      background-position: center center;
+    }
+
+  }
+
+  .content {
+
+    z-index: 1;
+    position: absolute;
+    bottom: 10%;
+    left: 1rem;
+    right: 1rem;
+    text-align: center;
+    opacity: 0;
+    animation: {
+      name: fadeInUpHero;
+      delay: 1200ms;
+      duration: 500ms;
+      fill-mode: forwards;
+      timing-function: ease-out;
+    }
+    text-shadow: 0px 0px 0.25rem transparentize($black, 0.5);
+
+    @media screen and (min-width: $screen-sm) {
+      left: 3rem;
+      right: 3rem;
+      bottom: 15%;
+    }
+
+  }
+
+  h1,
+  h2 {
+
+    color: $white;
+
+    &::selection {
+      background: $black-off;
+    }
+
+  }
+
+  h1 {
+
+    margin-bottom: 0.5rem;
+
+    @media screen and (min-width: $screen-md) {
+      font-size: 7rem;
+    }
+
+  }
+
+  h2 {
+
+    margin: 0px;
+    font-size: 1.25rem;
+
+    @media screen and (min-width: $screen-md) {
+      font-size: 1.375rem;
+    }
+
+  }
+
+  span {
+
+    display: block;
+    clear: both;
+    font-size: 0.5rem;
+    text-indent: -9999px;
+
+    @media screen and (min-width: $screen-sm) {
+      display: inline;
+      text-indent: 0px;
+      font-size: inherit;
+    }
+
+  }
+
+}
