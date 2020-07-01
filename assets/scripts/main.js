@@ -1,4 +1,4 @@
-[].forEach.call(document.querySelectorAll('nav a'), function(el) {
+[].forEach.call(document.querySelectorAll('nav a[href*="#"]'), function(el) {
   el.addEventListener('click', function(e) {
     e.preventDefault();
     var targetSection = el.getAttribute('href').substring(1);
@@ -9,7 +9,7 @@
   });
 });
 
-[].forEach.call(document.querySelectorAll('.party-member'), function(el) {
+[].forEach.call(document.querySelectorAll('.party-member:not(.filler)'), function(el) {
   el.addEventListener('click', function(e) {
     var popup = document.getElementById('member-popup');
     if (popup) {

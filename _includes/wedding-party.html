@@ -7,9 +7,15 @@
       <h4 class="member-name">{{ member.name }}</h4>
       {% if member.title %}<p class="member-title"><strong>{{ member.title }}</strong></p>{% endif %}
       <div class="member-description">
-        <p>&ldquo;{{ member.description }}&rdquo; <strong>&mdash; {% if member.group == 'bride' %}Bri{% elsif member.group == 'groom' %}Jase{% endif %}</strong></p>
+        <p>&ldquo;{{ member.description }}&rdquo; <strong>&mdash; {% if member.group == 'bride' %}Karrah{% elsif member.group == 'groom' %}Kyle{% endif %}</strong></p>
       </div>
     </div>
-  </div>
+	</div>
+	{% if forloop.index == 4 %}
+	<div class="party-member filler">
+		<img class="cropped" data-src="https://via.placeholder.com/400x400?text=Filler" alt="">
+	</div>
+
+	{% endif %}
   {% endfor %}
 </div>

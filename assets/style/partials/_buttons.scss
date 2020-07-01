@@ -1,0 +1,39 @@
+%btn {
+
+	$btn-color: $black;
+
+	display: inline-block;
+	padding: 0.625em 1em;
+	color: $white;
+	background-color: $btn-color;
+	-webkit-appearance: none;
+	border: 0px;
+	outline: 0px;
+	border-radius: 0.375em;
+	line-height: 1;
+	font-weight: bold;
+	text-decoration: none;
+	transition: background-color 150ms;
+	will-change: background-color;
+	text-transform: uppercase;
+
+	&:hover {
+		cursor: pointer;
+		background-color: lighten($btn-color, 20%);
+	}
+
+	&:active {
+		background-color: lighten($btn-color, 40%);
+	}
+
+}
+
+.btn {
+
+	@extend %btn;
+
+	+ .btn {
+		margin-left: 1em;
+	}
+
+}

@@ -84,9 +84,9 @@ function jsOpps(files, destination, concatName) {
 
 gulp.task('js', function() {
 
-  gulp.src(paths.assets + 'scripts/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter(stylish));
+  // gulp.src(paths.assets + 'scripts/*.js')
+  //   .pipe(jshint())
+  //   .pipe(jshint.reporter(stylish));
 
   return jsOpps([
       paths.node_modules + 'vanilla-lazyload/dist/lazyload.js',

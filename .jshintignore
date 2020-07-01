@@ -1,2 +1,2 @@
 node_modules
-_src/assets/scripts/vendor/*.js
+assets/scripts/vendor/*.js

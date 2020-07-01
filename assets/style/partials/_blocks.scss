@@ -28,7 +28,29 @@
       max-width: 300px;
     }
 
-  }
+	}
+
+	&-rsvp {
+
+		display: block;
+
+		h2 {
+
+			@media screen and (min-width: $screen-sm) {
+				text-align: center;
+			}
+
+		}
+
+		p {
+
+			@media screen and (min-width: $screen-md) {
+				font-size: 1.25rem;
+			}
+
+		}
+
+	}
 
   @media screen and (min-width: $screen-sm) {
 
