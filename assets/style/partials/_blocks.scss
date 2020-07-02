@@ -34,18 +34,36 @@
 
 		display: block;
 
-		h2 {
+		.rsvp-button-wrap {
+			text-align: center;
+		}
 
-			@media screen and (min-width: $screen-sm) {
+		.rsvp-fine-print p {
+			font-size: 0.875rem;
+		}
+
+		@media screen and (min-width: $screen-sm) {
+
+			max-width: 800px;
+			margin: 0px auto;
+			text-align: center;
+
+			h2 {
 				text-align: center;
 			}
 
-		}
-
-		p {
-
-			@media screen and (min-width: $screen-md) {
+			p {
 				font-size: 1.25rem;
+			}
+
+			.rsvp-fine-print {
+
+				text-align: center;
+
+				p {
+					font-size: 1rem;
+				}
+
 			}
 
 		}
