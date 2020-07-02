@@ -74,7 +74,7 @@ if (mapContainer) {
 						"coordinates": [-64.772633, 18.342743]
 					},
 					"properties": {
-						"title": "Susanaberg Ruins (Ceremony)",
+						"title": "Susannaberg Ruins (Ceremony)",
 						"icon": "crown-solid"
 					}
 				},
