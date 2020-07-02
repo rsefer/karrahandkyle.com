@@ -30,7 +30,7 @@
 
 	}
 
-	&-guide {
+	&-content {
 
 		display: block;
 
@@ -40,7 +40,13 @@
 		}
 
 		h2 {
+			margin: 2rem 0px 0.5rem;
 			font-size: 1.375rem;
+		}
+
+		img {
+			margin: 1rem 0px;
+			width: 100%;
 		}
 
 	}
