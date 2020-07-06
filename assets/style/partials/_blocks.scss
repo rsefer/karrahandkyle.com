@@ -128,11 +128,11 @@
   @media screen and (min-width: $screen-md) {
 
     .block-content {
-      width: 65%;
+      flex-basis: 65%;
     }
 
     .block-images {
-      width: 30%;
+      flex-basis: 30%;
     }
 
   }

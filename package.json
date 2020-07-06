@@ -8,8 +8,8 @@
       "email": "rsefer@gmail.com",
       "homepage": "https://rsefer.com"
     }
-	],
-	"scripts": {
+  ],
+  "scripts": {
     "build": "gulp build",
     "start": "gulp"
   },
@@ -42,7 +42,7 @@
     "jshint-stylish": "^2.2.1",
     "jshint-stylish-notifier": "^0.1.0",
     "normalize.css": "^8.0.0",
-    "smooth-scroll": "^16.0.3",
+    "smooth-scroll": "^16.1.3",
     "vanilla-lazyload": "^12.4.0"
   }
 }

@@ -1,3 +1,5 @@
+var mobileBreakpoint = 1024;
+
 [].forEach.call(document.querySelectorAll('nav a[href*="#"]'), function(el) {
   el.addEventListener('click', function(e) {
     e.preventDefault();
@@ -34,8 +36,30 @@
   });
 });
 
+var headerEl = document.querySelector('header');
+var headerNavEl = document.querySelector('.header-wrap nav');
+
+var scrollOffset = 0;
+if (window.outerWidth >= mobileBreakpoint) {
+	scrollOffset = document.querySelector('.header-wrap nav');
+}
+
 var scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 400
+});
+
+ScrollOut({
+	targets: 'header',
+	onShown: function(element, ctx, scrollingElement) {
+		if (window.outerWidth >= mobileBreakpoint) {
+			headerEl.style.height = null;
+		}
+	},
+	onHidden: function(element, ctx, scrollingElement) {
+		if (window.outerWidth >= mobileBreakpoint) {
+			headerEl.style.height = headerNavEl.offsetHeight + 'px';
+		}
+	}
 });
 
 var mapContainer = document.getElementById('map');
