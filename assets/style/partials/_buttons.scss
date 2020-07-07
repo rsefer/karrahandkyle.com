@@ -19,11 +19,11 @@
 
 	&:hover {
 		cursor: pointer;
-		background-color: lighten($btn-color, 20%);
+		background-color: lighten($btn-color, 10%);
 	}
 
 	&:active {
-		background-color: lighten($btn-color, 40%);
+		background-color: lighten($btn-color, 20%);
 	}
 
 }

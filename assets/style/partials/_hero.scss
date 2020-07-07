@@ -54,7 +54,7 @@
       fill-mode: forwards;
       timing-function: ease-out;
     }
-    text-shadow: 0px 0px 0.25rem transparentize($black, 0.5);
+    text-shadow: 0px 0px 0.125rem transparentize($black, 0.15);
 
     @media screen and (min-width: $screen-sm) {
       left: 3rem;

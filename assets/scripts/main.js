@@ -48,19 +48,19 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 400
 });
 
-ScrollOut({
-	targets: 'header',
-	onShown: function(element, ctx, scrollingElement) {
-		if (window.outerWidth >= mobileBreakpoint) {
-			headerEl.style.height = null;
-		}
-	},
-	onHidden: function(element, ctx, scrollingElement) {
-		if (window.outerWidth >= mobileBreakpoint) {
-			headerEl.style.height = headerNavEl.offsetHeight + 'px';
-		}
-	}
-});
+// ScrollOut({
+// 	targets: 'header',
+// 	onShown: function(element, ctx, scrollingElement) {
+// 		if (window.outerWidth >= mobileBreakpoint) {
+// 			headerEl.style.height = null;
+// 		}
+// 	},
+// 	onHidden: function(element, ctx, scrollingElement) {
+// 		if (window.outerWidth >= mobileBreakpoint) {
+// 			headerEl.style.height = headerNavEl.offsetHeight + 'px';
+// 		}
+// 	}
+// });
 
 var mapContainer = document.getElementById('map');
 if (mapContainer) {

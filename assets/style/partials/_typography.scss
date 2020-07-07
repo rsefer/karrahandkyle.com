@@ -41,7 +41,15 @@ ul {
   }
 
   a {
-    color: $green;
+
+		display: inline-block;
+		color: $blue;
+		transition: all 250ms;
+
+    &:hover {
+      transform: translate(0px, -1px);
+		}
+
   }
 
 }

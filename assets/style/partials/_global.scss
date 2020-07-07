@@ -63,7 +63,25 @@ address {
 	text-align: center;
 
 	a {
+
 		color: $black;
 		text-decoration: none;
+		transition: all 250ms;
+
+		span {
+			display: inline-block;
+		}
+
+    &:hover {
+
+			color: $blue;
+
+			span {
+				transform: translate(-2px, 0px);
+			}
+
+		}
+
 	}
+
 }
