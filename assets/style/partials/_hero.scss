@@ -9,38 +9,63 @@
   }
 
   @media screen and (min-width: $screen-sm) and (min-height: 500px) {
-    min-height: 650px;
+		min-height: 650px;
   }
 
   &-back {
+
     z-index: 0;
     position: absolute;
     top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
+    left: 50%;
+		bottom: 0px;
+		transform: translate(-50%, 0px);
     background: {
       size: cover;
-      position: 60% center;
-      image: url('./dist/images/photos/bridge.jpg');
-    }
+      position: 8.5% 50%;
+      image: url('./dist/images/photos/bridge_cropped.jpg');
+		}
+		width: 100%;
+		max-width: $screen-xl;
     opacity: 0;
     animation: {
       name: fadeIn;
       duration: 400ms;
       fill-mode: forwards;
       timing-function: linear;
+		}
+
+		@media screen and (min-width: 375px) {
+      background-position: 6% 50%;
     }
 
-    @media screen and (min-width: $screen-sm) {
+    @media screen and (min-width: $screen-md) {
       background-position: center center;
-    }
+		}
+
+		&:after {
+
+			content: ' ';
+			z-index: 1;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			height: 40%;
+			background: linear-gradient(to top, transparentize($black, 0.5) 0%, transparent 100%);
+
+			@media screen and (min-width: $screen-sm) {
+				content: '';
+				display: none;
+			}
+
+		}
 
   }
 
   .content {
 
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     bottom: 10%;
     left: 1rem;
@@ -54,12 +79,13 @@
       fill-mode: forwards;
       timing-function: ease-out;
     }
-    text-shadow: 0px 0px 0.125rem transparentize($black, 0.15);
+    text-shadow: 0px 0px 0.125rem transparentize($black, 0.05);
 
     @media screen and (min-width: $screen-sm) {
       left: 3rem;
       right: 3rem;
-      bottom: 15%;
+			bottom: 15%;
+			text-shadow: 0px 0px 0.125rem transparentize($black, 0.15);
     }
 
   }
