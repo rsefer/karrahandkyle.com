@@ -1,7 +1,7 @@
 .block {
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -120,18 +120,6 @@
         width: 100%;
       }
 
-    }
-
-  }
-
-  @media screen and (min-width: $screen-md) {
-
-    .block-content {
-      flex-basis: 60%;
-    }
-
-    .block-images {
-      flex-basis: 35%;
     }
 
   }
