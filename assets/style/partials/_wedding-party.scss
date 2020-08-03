@@ -56,7 +56,8 @@
 
   &-inner {
 
-    display: none;
+		display: none;
+		text-align: center;
 
     .member-popup & {
       display: block;
