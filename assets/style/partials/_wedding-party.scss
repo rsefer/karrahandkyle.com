@@ -50,8 +50,14 @@
     filter: grayscale(0%);
 	}
 
-	&.filler:hover {
-		cursor: inherit;
+	&.filler {
+
+		filter: none;
+
+		&:hover {
+			cursor: inherit;
+		}
+
 	}
 
   &-inner {
