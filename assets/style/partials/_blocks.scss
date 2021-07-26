@@ -8,7 +8,8 @@
   flex-flow: row wrap;
   align-content: flex-end;
 
-  &:nth-of-type(2) {
+  &:nth-of-type(n+2),
+	&:not(:first-child) {
     margin-top: 4rem;
   }
 
@@ -20,7 +21,7 @@
 
   }
 
-  .block-images {
+  &-images {
 
     margin-top: 2rem;
 
@@ -50,6 +51,9 @@
 		}
 
 	}
+
+	// &-accomodations {
+	// }
 
 	&-rsvp,
 	&-welcome {
@@ -99,7 +103,7 @@
 
   @media screen and (min-width: $screen-sm) {
 
-    &:nth-of-type(2) {
+    &:nth-of-type(even) {
 
       .block-images {
         order: 1;
@@ -134,7 +138,7 @@
 
   @media screen and (min-width: $screen-md + ($details-offset * 3)) {
 
-    &:nth-of-type(2) {
+    &:nth-of-type(even) {
 
       .block-images {
         transform: translate($details-offset * -1, 0px);
