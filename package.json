@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+		"style": "sass assets/style/style.scss:_includes/style.min.css --style=compressed"
   },
   "devDependencies": {
     "browser-sync": "^2.24.5",
